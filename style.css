@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; /* Mantiene la alineación vertical */
+  justify-content: space-between; /* Distribuye el espacio entre logo y menú */
+  padding: 2rem;
+  background-color: #ececec;
+}
+
+ul {
+  margin-left: auto; /* Empuja el menú hacia la derecha */
+}
+
+
+.logo-container {
+  display: flex; /* Permite que los elementos se ordenen en fila */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+.logo {
+  max-width: 5rem; /* Limita el ancho del logo */
+  margin-right: 1rem; /* Agrega espacio a la derecha del logo */
+}
+
+.logo img {
+  filter: red;
+}
+
+label {
+  color: red;
+  font-weight: bolder;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+ul {
+  margin: 0 auto;
+}
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.abrir,
+.cerrar {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  .abrir,
+  .cerrar {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir {
+    color: #1c1c1c;
+  }
+
+  .cerrar {
+    color: #ececec;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    transform: translateX(100%); /* Oculto inicialmente */
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0); /* Visible */
+  }
+
+  /* No es necesario el selector .nav:not(.visible) ya que usamos la clase visible */
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li a {
+    color: lime;
+  }
+}
