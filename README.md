@@ -1,29 +1,30 @@
-#Responsive Hamburger Menu
-## This project contains the HTML, CSS, and JavaScript code for a responsive hamburger menu. The menu adapts to different screen sizes, displaying a navigation bar on larger screens and a hamburger icon on smaller screens.
+# Responsive Hamburger Menu
 
 [Image of hamburger](hamburger.png)
 
-###Project Structure
+**This project contains the HTML, CSS, and JavaScript code for a responsive hamburger menu. The menu adapts to different screen sizes, displaying a navigation bar on larger screens and a hamburger icon on smaller screens.**
 
-*index.html
-*style.css
-*script.js
+### Project Structure
+* index.html
+* style.css
+* script.js
+* screenshot.png
 
-###Installation
+### Installation
+* Clone this repository or download the project files.
+* Open `index.html` in a web browser to view the hamburger menu in action.
 
-*Clone this repository or download the project files.
-*Open index.html in a web browser to see the hamburger menu in action.
+### Customization
+* Replace the placeholder text "Logo" with your actual logo image or content.
+* Adjust CSS styles to match your desired design.
+* Customize navigation links and content.
 
-###Customization
+### Usage
+* Click the hamburger icon on smaller screens to open the menu.
+* Click menu items to navigate.
 
-*Replace the placeholder text "Logo" with your actual logo.
-*Adjust the CSS styles to match your desired design.
-*Customize the navigation links and content.
+### Contributing
+Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
-###Contributing
-
-*Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-###License
-
-*This project is licensed under the MIT License.
+### License
+This project is licensed under the MIT License.
