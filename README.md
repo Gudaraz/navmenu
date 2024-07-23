@@ -1,6 +1,6 @@
 # Responsive Hamburger Menu
 
-[Image of hamburger](hamburger.png)
+[screenshot](hamburger.png)
 
 **This project contains the HTML, CSS, and JavaScript code for a responsive hamburger menu. The menu adapts to different screen sizes, displaying a navigation bar on larger screens and a hamburger icon on smaller screens.**
 
